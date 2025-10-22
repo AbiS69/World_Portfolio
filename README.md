@@ -1,6 +1,8 @@
 # 🌍 IGMP - Investable Global Market Portfolio
 
-Academic implementation of the market portfolio strategy based on global market capitalization weights. This project builds a truly diversified portfolio representing the entire investable universe, instead of only the stockmarket like is often used in models such as CAPM.
+Academic implementation of the true market portfolio that extends beyond traditional stock-only models. While CAPM and similar frameworks typically use stock market indices as proxies for the "market portfolio," this implementation captures the complete investable universe across all major asset classes, weighted by global market capitalization.
+
+**Why This Matters:** Most portfolio theory assumes investors hold the market portfolio, but in practice, "the market" is much broader than just stocks. This IGMP includes bonds, real estate, and commodities - representing what the theoretical market portfolio should actually look like.
 
 ## 📊 Portfolio Composition
 
@@ -12,7 +14,7 @@ Academic implementation of the market portfolio strategy based on global market 
 
 ## 🎯 Implementation
 
-The IGMP is constructed using 13 globally diversified ETFs with low fees:
+The IGMP is constructed using 13 liquid, low-cost ETFs that provide broad exposure to global markets. Each ETF was selected for its representativeness, liquidity, and cost efficiency:
 
 ### Fixed Income (55%)
 - **AGG** (20%) - US Aggregate Bonds
@@ -36,11 +38,13 @@ The IGMP is constructed using 13 globally diversified ETFs with low fees:
 
 ## 📈 Performance Results
 
-**IGMP Portfolio Metrics (Backtest Period):**
+**IGMP Portfolio Metrics (2019-2024):**
 - **Annual Return:** 6.4%
-- **Volatility:** 9.2% 
+- **Volatility:** 9.2%
 - **Sharpe Ratio:** 0.70
 - **Maximum Drawdown:** -20.0%
+
+**Key Insight:** The IGMP delivers moderate returns with significantly lower risk than equity-heavy portfolios. While SPY outperforms on absolute returns, the IGMP's superior risk-adjusted performance and drawdown protection make it attractive for risk-conscious investors.
 
 **Benchmark Comparison:**
 | Portfolio | Annual Return | Volatility | Sharpe Ratio | Max Drawdown |
@@ -87,19 +91,26 @@ Based on research from:
 
 ## 💡 Investment Philosophy
 
-The IGMP represents the optimal market portfolio that all investors would hold in a perfect world with no constraints. It provides:
+The IGMP embodies the theoretical "market portfolio" from modern portfolio theory - what all rational investors would hold in equilibrium. Unlike typical implementations that proxy the market with stock indices, this version includes the full spectrum of investable assets.
 
-- **Market Efficiency:** Captures returns from all investable assets
-- **Diversification:** Maximum risk reduction through correlation benefits
-- **Simplicity:** Single portfolio solution for global exposure
-- **Academic Rigor:** Theoretically sound allocation methodology
+**Core Principles:**
+- **Completeness:** Represents the entire global investment opportunity set
+- **Market Efficiency:** Weights reflect aggregate investor preferences and available supply
+- **Diversification:** Maximum risk reduction through low-correlation asset classes
+- **Accessibility:** Implemented through liquid, tradeable ETFs rather than theoretical constructs
 
-## ⚠️ Important Notes
+**Practical Application:** This portfolio serves as a benchmark for true diversification and can be used as a core holding, with tactical adjustments based on individual circumstances, market views, or regulatory constraints.
 
-- Past performance does not guarantee future results
-- This is for educational/research purposes only
-- Not personalized investment advice
-- Consider your own risk tolerance and investment objectives
-- This "World Portfolio" is a good approximation of the global asset allocation, but it might be interesting to adjust it for constrained buyers that overweight some assets (such as Treasuries) for regulatory reasons so it better represents the efficient portfolio.
+## ⚠️ Important Considerations
+
+**Research Purpose:** This implementation is designed for academic research and educational purposes. It demonstrates theoretical portfolio construction but should not be considered personalized investment advice.
+
+**Market Limitations:** While this approximates the global investable universe, real-world constraints create distortions:
+- **Regulatory Requirements:** Banks and pension funds may overweight certain assets (like Treasuries) due to capital requirements
+- **Liquidity Constraints:** Some investors cannot access all asset classes equally
+- **Transaction Costs:** Frequent rebalancing may not be practical for smaller portfolios
+- **Tax Implications:** Asset location and tax efficiency vary by jurisdiction
+
+**Future Enhancements:** A constraint-adjusted version could account for these regulatory distortions to better represent the theoretically optimal unconstrained portfolio.
 
 ---
