@@ -1,6 +1,6 @@
 # 🌍 IGMP - Investable Global Market Portfolio
 
-Academic implementation of the "buy everything" portfolio strategy based on global market capitalization weights. This project builds a truly diversified portfolio representing the entire investable universe.
+Academic implementation of the market portfolio strategy based on global market capitalization weights. This project builds a truly diversified portfolio representing the entire investable universe, instead of only the stockmarket like is often used in models such as CAPM.
 
 ## 📊 Portfolio Composition
 
